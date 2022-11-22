@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>
-      <h2>Search and add a pin</h2>
       <GmapAutocomplete
         @place_changed='setPlace'
       />
@@ -15,7 +14,7 @@
     <GmapMap
       :center='center'
       :zoom='12'
-      style='width:100%;  height: 400px;'
+      style='width:100%;  height: 90vh;'
     >
       <GmapMarker
         :key="index"
